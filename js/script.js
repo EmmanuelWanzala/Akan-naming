@@ -39,7 +39,7 @@
 //      }
 
 // }
-var submission = function() {
+var submission = function() { 
     var daysOfTheWeek = [
       "Sunday",
       "Monday",
