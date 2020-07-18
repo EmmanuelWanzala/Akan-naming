@@ -1,34 +1,90 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>week2</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>week2</title>
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron">
-
-    <h1>WELCOME TO FINDYOURDAY.COM</h1>
-    <P>Here we help youfind the day of the week that you were born</P>
+  <form>
+    <div class="form-group">
+      <label for="email">Day:</label>
+      <input type="day" class="form-control" id="d">
     </div>
-
-    <form>
-        <div class="form-group">
-          <label for="enterYourBirthday">Enter your birthdate</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="CC/YY/MM/DD">
-        </div>
-        <div class="form-group">
-          <label for="enterYourGender">Enter your gender</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your gender">
-        </div>
-        <a href="#!" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">SUBMIT</a>
-      </form>
+    <div class="form-group">
+      <label for="pwd">month:</label>
+      <input type="text" class="form-control" id="m">
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-      <script src="week.js"></script>
+      <div class="form-group">
+        <label for="pwd">year</label>
+        <input type="text" class="form-control" id="yy">
+      </div>
+
+      Gender:
+      <select id="gender">
+       <option value="male">Male</option>
+       <option value ="female">Female</option>
+
+
+      </select>
+    <button type="submit" class="btn btn-default" onclick="akan()">Submit</button>
+  </form>
+  <script src="js/script.js"></script>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Akan Names</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css"> 
+    <!-- <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet"> -->
+
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+        <h1>Akan System of Naming</h1>
+        <!-- <p class="ppp"> </p>
+        <p class="ttt">Get to know your 'Akan Name' by simply filling out the form below.</p> -->
+        < div class
+         <p>WELCOME</p>
+         <p>Please input yuor correct details</p>
+        <form>
+            <div>
+                <div>
+                        <p id="output"></p>
+                    <label>Enter Your first Name.</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter" required>
+                    <label>Year</label>
+                    <input type="number" class="form-control" id="year" placeholder="Enter the year." required
+                        min="1980" max="2019" >
+                    <label>Month</label>
+                    <input type="number" class="form-control" id="month" placeholder="Enter the month" required min="1"
+                        max="12">
+
+                    <label>Day</label>
+                    <input type="number" class="form-control" id="day" placeholder="Enter the day" required min="1"
+                        max="31">
+                </div>
+                <div class="ggg">
+                    <label>Gender</label><br>
+                    <input type="radio" name="gender" id="male" value="male"> Male checked
+                    <input type="radio" name="gender" id="female" value="female"> Female
+                </div>
+            </div>
+            <a onclick="submission()" class="btn btn-outline-info btn-lg">Submit</a>
+            
+            <button type="reset" class="btn btn-outline-info btn-lg">Reset</button>
+            
+        </form>
+    <!-- </div> -->
+    <script src="js/script.js"></script>
+</body>
+
 </html>
