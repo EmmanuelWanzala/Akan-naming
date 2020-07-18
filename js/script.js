@@ -92,13 +92,13 @@ var submission = function() {
    if (year < 0) {
       output.style.background ="red"
       output.style.color= "white"
-      output.innerHTML = "Hey! " + name + " please enter a valid year! "
+      output.innerHTML = + name + " invalid data! "
   }
     
   else if ((month < 1) || (month > 31)) {
       output.style.background ="red"
       output.style.color= "white"
-      output.innerHTML = "Hey! " + name + " please enter a valid month! "
+      output.innerHTML =  + name + " invalid data! "
   }
     
    else if (day < 0 || day > 31) {
