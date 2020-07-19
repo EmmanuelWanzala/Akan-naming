@@ -58,13 +58,13 @@
               <p id="showcase"></p> 
          </div>
          <div class="card">
-        <form>   
+        <!-- <form>   
             <div>
                 <div>
-                        <!-- <p id="output"></p>  -->
+                        <-- <p id="output"></p>  -->
                     <!-- <label>Enter Your first Name.</label>
                     <input type="text" class="form-control" id="name" placeholder="Enter" required> -->
-                    <label>Year</label>
+                    <!-- <label>Year</label>
                     <input type="number" class="form-control" id="yy" placeholder="Enter the year." required
                         min="1979" max="2020" >
                     <label>Month</label>
@@ -85,6 +85,21 @@
             
             <button type="reset" class="btn btn-outline-info btn-lg">Reset</button>
            
+        </form>  -->
+        <form>
+          <label for="year">year</label><br>
+          <input type="number" id="yy" name="year" class="form-control" placeholder="John" min="1990" max="2020" required><br>
+          <label for="month">month</label><br>
+          <input type="number" id="mm" name="lname"class="form-control"placeholder="Doe" min="1" max="12" required><br><br>
+        
+            <label for="fname">date</label><br>
+            <input type="number" id="dd" name="fname"class="form-control" placeholder="John" min="1" max="31" required><br>
+    
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+          <input type="submit" class="btn btn-outline-info btn-lg" onclick="akan()" value="Submit">
         </form>
          </div>
          

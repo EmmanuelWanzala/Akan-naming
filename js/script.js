@@ -115,12 +115,12 @@ var akan = function() {
     showcase.style.background ="yellow"
     showcase.style.color="green"
     // output.style.background ="red"
-    showcase.innerHTML = "you were born on a " + daysOfTheWeek[solution] + " and your Akan name is " + femaleNames[solution];
+    showcase.innerHTML = "Being born on a " + daysOfTheWeek[solution] + "your Akan name is " + femaleNames[solution];
 }
     else if(male.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) { 
       showcase.style.background ="white"
       showcase.style.color="green"
-        showcase.innerHTML = " you were born on a " + daysOfTheWeek[solution] + " and your Akan name is " + maleNames[solution];
+        showcase.innerHTML = "Being born on a " + daysOfTheWeek[solution] + " your Akan name is " + maleNames[solution];
     }
   //    else if(female.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) {
   //     output.style.background ="lime"
