@@ -67,9 +67,9 @@ var akan = function() {
     //   "Afua",
     //   "Ama"
     // ];
-    var month = parseInt(document.getElementById("month").value);
-    var year = parseInt(document.getElementById("year").value);
-    var day = parseInt(document.getElementById("day").value);
+    var month = parseInt(document.getElementById("mm").value);
+    var year = parseInt(document.getElementById("yy").value);
+    var day = parseInt(document.getElementById("dd").value);
     // var name =(document.getElementById("name").value);
     var date0fbirth = new Date(year + "/" + month + "/" + day);
     var solution= date0fbirth.getDay();
@@ -92,19 +92,19 @@ var akan = function() {
    if (year < 0) {
       showcase.style.background ="yellow"
       showcase.style.color= "green"
-      showcase.innerHTML = " invalid data! "
+      showcase.innerHTML = " invalid data"
   }
     
   else if ((month < 1) || (month > 31)) {
       showcase.style.background ="white"
       showcase.style.color= "green"
-      showcase.innerHTML = " invalid data! "
+      showcase.innerHTML = " invalid data"
   }
     
    else if (day < 0 || day > 31) {
       showcase.style.background ="red"
       showcase.style.color= "white"
-      showcase.innerHTML = " please enter a valid day! "
+      showcase.innerHTML = " invalid data"
   }
   //  var valid = (year>0 && (month > 0 && month <= 12) (day > 0 && day <32))
    
