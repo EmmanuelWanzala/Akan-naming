@@ -70,7 +70,7 @@ var submission = function() {
     var month = parseInt(document.getElementById("month").value);
     var year = parseInt(document.getElementById("year").value);
     var day = parseInt(document.getElementById("day").value);
-    var name =(document.getElementById("name").value);
+    // var name =(document.getElementById("name").value);
     var date0fbirth = new Date(year + "/" + month + "/" + day);
     var results = date0fbirth.getDay();
     var output = document.getElementById("output");
@@ -92,19 +92,19 @@ var submission = function() {
    if (year < 0) {
       output.style.background ="red"
       output.style.color= "white"
-      output.innerHTML = + name + " invalid data! "
+      output.innerHTML = " invalid data! "
   }
     
   else if ((month < 1) || (month > 31)) {
       output.style.background ="red"
       output.style.color= "white"
-      output.innerHTML =  + name + " invalid data! "
+      output.innerHTML = " invalid data! "
   }
     
    else if (day < 0 || day > 31) {
       output.style.background ="red"
       output.style.color= "white"
-      output.innerHTML = "Hey! " + name + " please enter a valid day! "
+      output.innerHTML = " please enter a valid day! "
   }
   //  var valid = (year>0 && (month > 0 && month <= 12) (day > 0 && day <32))
    
@@ -112,14 +112,14 @@ var submission = function() {
   //    alert("No Input received!!");
   //  }
   
-    if(male.checked && year > 0 && month > 0 && month < 12 && day > 0 && day < 32) {
-      output.style.background ="lime"
-        output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + maleNames[results];
+    if(male.checked && year > 0 && month > 0 && month < 12 && day > 0 && day < 32) { 
+      output.style.background ="white"
+        output.innerHTML = " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + maleNames[results];
     }
      else if(female.checked && year > 0 && month > 0 && month < 12 && day > 0 && day < 32) {
       output.style.background ="lime"
       output.style.background ="red"
-      output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results];
+      output.innerHTML = "you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results];
   }
   
   };
