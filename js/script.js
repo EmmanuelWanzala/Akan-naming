@@ -42,9 +42,9 @@
 var akan = function() { 
     var dayWeek = ["Sunday","Monday","Tuesday", "Wednesday","Thursday","Friday","Saturday"];
     
-    var maleNames = [ "Kwasi","Kwadwo","Kwabena","Kwaku", "Yaw", "Kofi","Kwame"];
+    var males = [ "Kwasi","Kwadwo","Kwabena","Kwaku", "Yaw", "Kofi","Kwame"];
    
-    var femaleNames = ["Akosua"," Adwoa", "Abenaa","Akua","Yaa", "Afua", "Ama"];
+    var females = ["Akosua"," Adwoa", "Abenaa","Akua","Yaa", "Afua", "Ama"];
   
     var day = parseInt(document.getElementById("dd").value);
     var month = parseInt(document.getElementById("mm").value);
@@ -87,12 +87,12 @@ var akan = function() {
     showcase.style.background ="yellow"
     showcase.style.color="green"
     // output.style.background ="red"
-    showcase.innerHTML = "Being born on a " + dayWeek[solution] + ". Your Akan name is " + femaleNames[solution];
+    showcase.innerHTML = "Being born on a " + dayWeek[solution] + ". Your Akan name is " + females[solution];
 }
     else if(male.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) { 
       showcase.style.background ="white"
       showcase.style.color="green"
-        showcase.innerHTML = "Being born on a " + dayWeek[solution] + ". Your Akan name is " + maleNames[solution];
+        showcase.innerHTML = "Being born on a " + dayWeek[solution] + ". Your Akan name is " + males[solution];
     }
 };
   
