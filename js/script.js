@@ -40,37 +40,17 @@
 
 // }
 var akan = function() { 
-    var daysOfTheWeek = ["Sunday","Monday","Tuesday", "Wednesday","Thursday","Friday","Saturday"];
-    //   "Sunday",
-    //   "Monday",
-    //   "Tuesday",
-    //   "Wednesday",
-    //   "Thursday",
-    //   "Friday",
-    //   "Saturday"
-    // ];
+    var dayWeek = ["Sunday","Monday","Tuesday", "Wednesday","Thursday","Friday","Saturday"];
+    
     var maleNames = [ "Kwasi","Kwadwo","Kwabena","Kwaku", "Yaw", "Kofi","Kwame"];
-    //   "Kwasi",
-    //   "Kwadwo",
-    //   "Kwabena",
-    //   "Kwaku",
-    //   "Yaw",
-    //   "Kofi",
-    //   "Kwame"
-    // ];
+   
     var femaleNames = ["Akosua"," Adwoa", "Abenaa","Akua","Yaa", "Afua", "Ama"];
-    //   "Akosua",
-    //    " Adwoa",
-    //   "Abenaa",
-    //   "Akua",
-    //   "Yaa",
-    //   "Afua",
-    //   "Ama"
-    // ];
+  
+    var day = parseInt(document.getElementById("dd").value);
     var month = parseInt(document.getElementById("mm").value);
     var year = parseInt(document.getElementById("yy").value);
-    var day = parseInt(document.getElementById("dd").value);
-    // var name =(document.getElementById("name").value);
+    
+   
     var date0fbirth = new Date(year + "/" + month + "/" + day);
     var solution= date0fbirth.getDay();
     var showcase = document.getElementById("showcase");
@@ -82,11 +62,7 @@ var akan = function() {
       return false;
     }
   
-  //   if (month == null || month== "", day == null || day == "", year== null || year == "", name == null || name == "") {
-  //     alert("Please Fill All Required Field");
-  //     return false;
-  //   }
-  // }
+ 
     
     
    if (year < 0) {
@@ -106,27 +82,17 @@ var akan = function() {
       showcase.style.color= "white"
       showcase.innerHTML = " invalid data"
   }
-  //  var valid = (year>0 && (month > 0 && month <= 12) (day > 0 && day <32))
-   
-  //  if(valid == false){
-  //    alert("No Input received!!");
-  //  }
+  
   if(female.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) {
     showcase.style.background ="yellow"
     showcase.style.color="green"
     // output.style.background ="red"
-    showcase.innerHTML = "Being born on a " + daysOfTheWeek[solution] + "your Akan name is " + femaleNames[solution];
+    showcase.innerHTML = "Being born on a " + dayWeek[solution] + ". Your Akan name is " + femaleNames[solution];
 }
     else if(male.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) { 
       showcase.style.background ="white"
       showcase.style.color="green"
-        showcase.innerHTML = "Being born on a " + daysOfTheWeek[solution] + " your Akan name is " + maleNames[solution];
+        showcase.innerHTML = "Being born on a " + dayWeek[solution] + ". Your Akan name is " + maleNames[solution];
     }
-  //    else if(female.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) {
-  //     output.style.background ="lime"
-  //     output.style.background ="red"
-  //     output.innerHTML = "you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results];
-  // }
-  
-  };
+};
   
