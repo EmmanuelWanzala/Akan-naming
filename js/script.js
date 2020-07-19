@@ -72,8 +72,8 @@ var akan = function() {
     var day = parseInt(document.getElementById("day").value);
     // var name =(document.getElementById("name").value);
     var date0fbirth = new Date(year + "/" + month + "/" + day);
-    var results = date0fbirth.getDay();
-    var output = document.getElementById("output");
+    var solution= date0fbirth.getDay();
+    var showcase = document.getElementById("showcase");
     var male = document.getElementById("male")
     var female = document.getElementById("female")
     
@@ -90,21 +90,21 @@ var akan = function() {
     
     
    if (year < 0) {
-      output.style.background ="yellow"
-      output.style.color= "green"
-      output.innerHTML = " invalid data! "
+      showcase.style.background ="yellow"
+      showcase.style.color= "green"
+      showcase.innerHTML = " invalid data! "
   }
     
   else if ((month < 1) || (month > 31)) {
-      output.style.background ="white"
-      output.style.color= "green"
-      output.innerHTML = " invalid data! "
+      showcase.style.background ="white"
+      showcase.style.color= "green"
+      showcase.innerHTML = " invalid data! "
   }
     
    else if (day < 0 || day > 31) {
-      output.style.background ="red"
-      output.style.color= "white"
-      output.innerHTML = " please enter a valid day! "
+      showcase.style.background ="red"
+      showcase.style.color= "white"
+      showcase.innerHTML = " please enter a valid day! "
   }
   //  var valid = (year>0 && (month > 0 && month <= 12) (day > 0 && day <32))
    
@@ -112,15 +112,15 @@ var akan = function() {
   //    alert("No Input received!!");
   //  }
   if(female.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) {
-    output.style.background ="yellow"
-    output.style.color="green"
+    showcase.style.background ="yellow"
+    showcase.style.color="green"
     // output.style.background ="red"
-    output.innerHTML = "you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results];
+    showcase.innerHTML = "you were born on a " + daysOfTheWeek[solution] + " and your Akan name is " + femaleNames[solution];
 }
     else if(male.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) { 
-      output.style.background ="white"
-      output.style.color="green"
-        output.innerHTML = " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + maleNames[results];
+      showcase.style.background ="white"
+      showcase.style.color="green"
+        showcase.innerHTML = " you were born on a " + daysOfTheWeek[solution] + " and your Akan name is " + maleNames[solution];
     }
   //    else if(female.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) {
   //     output.style.background ="lime"
