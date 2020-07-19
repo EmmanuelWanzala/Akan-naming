@@ -39,7 +39,7 @@
 //      }
 
 // }
-var submission = function() { 
+var akan = function() { 
     var daysOfTheWeek = ["Sunday","Monday","Tuesday", "Wednesday","Thursday","Friday","Saturday"];
     //   "Sunday",
     //   "Monday",
@@ -111,20 +111,22 @@ var submission = function() {
   //  if(valid == false){
   //    alert("No Input received!!");
   //  }
-  else if(female.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) {
-    output.style.background ="lime"
-    output.style.background ="red"
+  if(female.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) {
+    output.style.background ="yellow"
+    output.style.color="green"
+    // output.style.background ="red"
     output.innerHTML = "you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results];
 }
-    if(male.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) { 
+    else if(male.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) { 
       output.style.background ="white"
+      output.style.color="green"
         output.innerHTML = " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + maleNames[results];
     }
-     else if(female.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) {
-      output.style.background ="lime"
-      output.style.background ="red"
-      output.innerHTML = "you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results];
-  }
+  //    else if(female.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) {
+  //     output.style.background ="lime"
+  //     output.style.background ="red"
+  //     output.innerHTML = "you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results];
+  // }
   
   };
   

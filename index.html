@@ -49,18 +49,18 @@
 
 <body>
      <div class="container"> 
-        <h1>Akan System of Naming</h1>
         <!-- <p class="ppp"> </p>
         <p class="ttt">Get to know your 'Akan Name' by simply filling out the form below.</p> -->
         <div class="jumbotron">
               <p>WELCOME</p>
+              <h1>Akan System of Naming</h1>
               <p>Please input your correct details</p>
          </div>
          <div class="card">
         <form>   
             <div>
                 <div>
-                        <p id="output"></p> 
+                        <!-- <p id="output"></p>  -->
                     <!-- <label>Enter Your first Name.</label>
                     <input type="text" class="form-control" id="name" placeholder="Enter" required> -->
                     <label>Year</label>
@@ -80,13 +80,13 @@
                     <input type="radio" name="gender" id="female" value="female"> Female
                 </div>
             </div>
-            <a onclick="submission()" class="btn btn-outline-info btn-lg">Submit</a>
+            <a  class="btn btn-outline-info btn-lg"onclick="akan()">Submit</a>
             
             <button type="reset" class="btn btn-outline-info btn-lg">Reset</button>
-            
+            <p id="output"></p> 
         </form>
          </div>
-    
+         
     <script src="js/script.js"></script>
 </body>
 
