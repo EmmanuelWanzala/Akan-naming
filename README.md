@@ -3,7 +3,7 @@
 
 ##  A SCREENSHOT OF THE PROJECT
 
-<img src="images/akan.png" height="430" width="720" alt=">
+<img src="images/akan.png" height="430" width="720" alt="the web page">
 
 # DESCRIPTION
 
