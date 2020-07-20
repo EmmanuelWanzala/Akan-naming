@@ -3,12 +3,12 @@
 
 ##  A SCREENSHOT OF THE PROJECT
 
-Thw web page before the user keys in information.
+The web page before the user keys in information is shown below:
 <img src="images/akan.png" >
 
-After the user keys in information and presses the submit button.
+After the user keys in information and presses the submit button the results are displayed.
 
-The results are displayed.
+The web page looks as follows:
 <img src="images/akan1.png">
 
 # DESCRIPTION
