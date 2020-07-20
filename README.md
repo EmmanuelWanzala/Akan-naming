@@ -1,6 +1,10 @@
 # THE AKAN NAMING SYSTEM APP
 *This is an application based on the Akan naming system.
 
+##  A SCREENSHOT OF THE PROJECT
+
+<img src="images/screenshot.png">
+
 # DESCRIPTION
 
 This is a project that takes in a users data(i.e the users year of birth,the month of birth and the date of bith).
@@ -58,5 +62,11 @@ Akan naming system is the system used to name children in Ghana.
 -Bootstrap
 
 #### THE LIVE LINK TO THE WEB APPLICATION
+https://emmanuelwanzala.github.io/week2/
 
+#### LICENSE
+MIT LICENSE: https://spdx.org/licenses/MIT.html
 
+#### CONTACTS
+
+*wanzalaemmanuel28@gmail.com
