@@ -69,4 +69,4 @@ MIT LICENSE: https://spdx.org/licenses/MIT.html
 
 #### CONTACTS
 
-*wanzalaemmanuel28@gmail.com
+wanzalaemmanuel28@gmail.com
