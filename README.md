@@ -5,6 +5,8 @@
 
 <img src="images/akan.png" >
 
+<img src="images/akan1.png">
+
 # DESCRIPTION
 
 This is a project that takes in a users data(i.e the users year of birth,the month of birth and the date of bith).
